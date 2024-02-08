@@ -1,0 +1,400 @@
+#wrapper {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: white;
+	background-color: rgba(80, 8, 50, 0.6);
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+
+.dropdownm {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#dropdownIcon {
+	color: white;
+	background-color: transparent;
+	width: 200px;
+	cursor: pointer;
+}
+
+.dropdownm {
+	position: relative;
+	display: inline-block;
+	
+}
+
+.dropbtnm {
+	padding: 10px;
+	border: none;
+	background: none;
+}
+
+.dropdownm-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+	top: 100%;
+	width: 200px;
+	text-align-last: center;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.dropdownm-content a {
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdownm-content a:hover {
+	background-color: black;
+}
+
+.dropdownm-content.show {
+	display: block;
+}
+
+header{
+	justify-content: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+main {
+	width: 90%;
+	justify-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+main img{
+	width: 100%;
+}
+
+hr{
+	width: 90%;
+
+}
+
+#floam {
+	width: 30%;
+	float: left;
+}
+
+aside {
+	width: 50%;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+#floas {
+	float: right;
+	height: auto;
+}
+
+h3 {
+	color: white;
+}
+
+.narudzba {
+	clear: both;
+	text-align: center;
+	justify-content: center;
+}
+
+.nar {
+	text-decoration: none;
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+.nar:hover {
+	color: red;
+}
+
+footer {
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	color: white;
+	margin-top: 20px;
+}
+
+footer img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 5%;
+}
+
+h1 {
+	color: white;
+	font-size: 150px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	letter-spacing: 20px;
+	margin-top: 40px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.submenu-content {
+	width: 250px; /* Adjust the width as needed */
+  }
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropbtn {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	padding: 20px;
+	font-size: 14px;
+	border: none;
+	width: 200px;
+	cursor:pointer;
+	border-radius: 8px;
+	margin-top: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 100%;
+	width: 200px;
+	text-align: center;
+	justify-content: center;
+}
+
+.dropdown-content p {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content p:hover {
+	background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: black;
+}
+
+.dropdown-submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(90, 90, 90, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 0;
+    left: 100%;
+	width: 250px;
+    text-align-last: center;
+}
+
+.submenu-btn {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+	width: 200px;
+}
+
+.submenu-content p {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content p:hover, .submenu-btn:hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .dropdown-submenu:hover .submenu-content {
+	display: block;
+  }
+
+
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.thumbnails img {
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 80%;
+	max-height: 80%;
+}
+
+
+.close {
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.prevArrow,
+.nextArrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 30px;
+	cursor: pointer;
+	color: #fff;
+	transition: color 0.3s;
+}
+
+.prevArrow {
+	left: 10px;
+}
+
+.nextArrow {
+	right: 10px;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+	color: #ccc;
+}
+
+.thumbnails img {
+	width: 250px;
+	height: 200px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+p {
+	color: white;
+}
+
+.onama {
+	justify-content: center;
+	text-align: center;
+}
+
+aside {
+	max-height: inherit("main");
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    
+    #wrapper {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    
+    main, aside {
+        width: 100%;
+        float: none;
+    }
+
+    #floas, #floam {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+		justify-content: center;
+		text-align: center;
+    }
+
+	.dropbtn, .submenu-btn {
+        display: none;
+    }
+
+	.dropdown-content, .submenu-content {
+        display: block;
+        position: static;
+        width: 100%;
+		align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        text-align: left;
+        padding: 10px;
+		background-color: transparent;
+		box-shadow: none;
+        border: none;
+    }
+
+    /* Ensure proper spacing between items */
+    .dropdown-content a, .submenu-content p {
+        display: block;
+        margin-bottom: 5px; /* Adjust margin between items */
+    }
+
+   
+}

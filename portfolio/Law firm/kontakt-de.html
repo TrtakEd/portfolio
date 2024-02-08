@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwaltskanzlei</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cekic.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <nav>
+            <div class="logo">
+                <img src="your_logo_image_url_here" alt="Logo firme">
+            </div>
+
+            <div class="nav-links">
+                <ul class="nav-links">
+                <li><a href="index-de.html" id="nav-home">HOME</a></li>
+                <li><a href="onama-de.html" id="nav-about">ÜBER UNS</a></li>
+                <li><a href="kontakt-de.html" id="nav-contact">KONTAKT</a></li>
+            </ul>
+            </div>
+
+            <div class="menu-toggle">
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            
+            <div class="language-selector">
+                <h5 class="language-label">Sprache:</h5>
+                <div class="dropdown">
+                    <a href="index-de.html" class="flag-link"><img src="njemacki.png" alt="Deutsch" class="language-flag" data-lang="de"></a>
+                    <div class="dropdown-content">
+                        <a href="index-bs.html"><img src="bosanski.png" alt="Bosanski" class="language-flag"
+                                data-lang="bs"></a>
+                        <a href="index-en.html"> <img src="engleski.png" alt="English" class="language-flag"
+                                data-lang="en"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main id="kont">
+            <section>
+                <h2>Kontaktieren Sie uns:</h2>
+                <p><img class="emoti" src="phone.png" alt="Phone">+38761</p>
+                <p><img class="emoti" src="phone.png" alt="Phone">+38761</p>
+                <p><img class="emoti" src="email.png" alt="Email">@gmail.com</p>
+            </section>
+
+            <section id="contact">
+                <h2>Oder füllen Sie einfach das nächste Formular aus:</h2>
+                <form action="form.php" method="post" class="contact-form" onsubmit="return validateForm()">
+
+                    <div class="form-group">
+                        <label for="fullname">Vollständiger Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber">Telefonnummer:</label><br>
+                        <input type="text" id="phonenumber" name="phonenumber" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Mail-Adresse:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="heading">Betreff der Nachricht:</label><br>
+                        <input type="text" id="heading" name="heading" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nachricht:</label><br>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+
+        <footer>
+            <p class="r">&copy; 2019 Anwaltskanzlei. Alle Rechte vorbehalten.</p>
+
+            <div class="medij">
+                <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" class="emoti" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" class="emoti" alt="Instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="x-twitter.png" class="emoti" alt="X-twitter"></a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

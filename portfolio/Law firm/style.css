@@ -1,0 +1,534 @@
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(18, 25, 52, 0.7);
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body,
+ul {
+    padding: 0;
+}
+
+nav {
+    background-image: url(blackback.jpg);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+
+.logo {
+    padding-left: 20px;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: brown;
+}
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image: url(blackback.jpg);
+    min-width: 100px;
+}
+
+.language-dropdown .dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dropdown-content a:hover {
+    background-color: brown;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.language-label {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.language-flag {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+header {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#knjiga {
+    max-width: 100%;
+}
+
+main {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 40px 20px;
+
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.usluga {
+    background-color: rgba(51, 51, 51, 0.2);
+    width: calc(40%);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.usluga h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.usluga p {
+    font-size: 14px;
+    color: black;
+}
+
+#levo {
+    width: 55%;
+    float: left;
+}
+
+aside {
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
+    width: 20%;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.4);
+    border-radius: 10px;
+    padding: 40px 20px;
+}
+
+#malamap {
+    width: 100%;
+}
+
+.nastim {
+    justify-content: center;
+    text-align: center;
+}
+
+#donji1 {
+    background-color: rgba(51, 51, 51, 0.2);
+    border-radius: 16px;
+    margin-left: 5%;
+    padding: 20px;
+    Float: left;
+    width: 40%;
+    height: auto;
+}
+
+#donji2 {
+    background-color: rgba(51, 51, 51, 0.2);
+    border-radius: 16px;
+    margin-right: 5%;
+    padding: 20px;
+    float: right;
+    width: 40%;
+    height: auto;
+}
+
+
+hr {
+    width: 90%;
+}
+
+
+section {
+    margin-bottom: 20px;
+}
+
+.flo {
+    clear: both;
+
+}
+
+#forma {
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-image: url(blackback.jpg);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medij {
+    padding-right: 20px;
+}
+
+#lokacija {
+    text-align: center;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+}
+
+#kont {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: none;
+}
+
+.emoti {
+    height: 25px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0.4);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+#contacts {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#submit {
+    background-color: brown;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    main {
+        margin-top: 50px;
+        margin-left: 5%;
+        padding: 10px;
+    }
+
+    #levo {
+        width: 45%;
+    }
+
+    aside {
+        margin-top: 50px;
+        width: 30%;
+    }
+
+    #malamap {
+        width: 100%;
+    }
+
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    #donji1,
+    #donji2 {
+        width: 35%;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+
+    #map {
+        width: 100%;
+        height: 200px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+    nav ul li {
+        margin-right: 5px;
+    }
+
+    header {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    main {
+        margin-top: 10%;
+        padding: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #levo {
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: none;
+    }
+
+    aside {
+        margin-top: 25px;
+        float: none;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+    }
+
+    .service-container {
+        display: block;
+    }
+
+    .usluga{
+        width: auto;
+    }
+
+    #donji1 {
+        margin-left: 5%;
+        margin-right: 5%;
+        float: none;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    #donji2 {
+        margin-left: 5%;
+        margin-right: 5%;
+        float: none;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+
+    section {
+        margin-bottom: none;
+    }
+
+    .flo {
+        clear: none;
+    }
+
+    footer {
+        padding: 3px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    #malamap {
+        width: 100%;
+    }
+
+    #map {
+        width: 90%;
+        height: 100px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1002;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(51, 51, 51, 0.7);
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: none;
+        overflow-y: auto;
+        z-index: 1001;
+    }
+
+    .nav-links ul li {
+        margin: 20px 0;
+    }
+
+    .nav-links ul.active {
+        display: flex;
+    }
+
+    .dropdown-content {
+        display: none;
+        z-index: 1000;
+    }
+
+    .dropdown-content.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .line {
+        width: 100%;
+        height: 3px;
+        margin-top: 3px;
+        background-color: white;
+    }
+
+
+} 
